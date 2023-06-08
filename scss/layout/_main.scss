@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+    background-image: url("https://i.postimg.cc/kXwn0rDr/image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  
+.cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 275px;
+    h1 {
+        font-family: 'Oswald', sans-serif;
+        display: flex;
+        font-size: 90px;
+        color: white;
+        &:hover{
+            color: grey;
+        }
+    }
+    span {
+        font-family: 'Oswald', sans-serif;
+        color: rgb(119, 118, 118);
+        font-size: 25px;
+        margin-left: 4.5rem;
+    }
+
+}

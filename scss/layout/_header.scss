@@ -1,0 +1,36 @@
+/* Import font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+
+.css-nav{
+    background-color: transparent !important;
+    .mt-0 {
+      margin-top: 0 !important;
+    }
+    .logo{
+        width: 100px;
+    }
+    span{
+        font-family: 'Oswald', sans-serif;
+        color:white;
+        font-size: 20px;
+    }
+    .css-ul{
+        align-items: center;
+        gap: 2rem;
+        li a{
+            color:white !important;
+            font-family: 'Oswald', sans-serif;
+            font-size: 20px;
+            &:hover{
+                color:grey !important;
+                font-weight: bold;
+                text-decoration: underline;
+            }
+        }
+    }
+    .navbar-toggler-icon.active {
+        background-color: white !important;
+      }
+    
+}
