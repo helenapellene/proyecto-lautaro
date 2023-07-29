@@ -1,8 +1,59 @@
-.about-background {
-    background-color: black;
-    background-image: url("../assets/sobrbemi.JPG");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+.sobre-mi {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack the elements vertically */
+  align-items: center; /* Center elements horizontally */
+  padding: 30px;
+    
+  .cont-sb {
+    display:flex;
+    align-items: center;
+    gap:1rem;
+    width:100%;
+    height: auto;
+    background-color: rgb(8, 0, 0);
+    opacity: 0.8;
+    border-radius: 20px;
+    padding-left: 1rem;
+    overflow: hidden; 
+    p {
+      font-size: 20px;
+      color: white;
+      text-align: left; 
+      width: 60%;
+      &::first-letter {
+        font-size: 70px;
+      }
+    }
+  }
+   /* Add padding to adjust space between sections */
 }
+
+  .show-animation {
+    animation-name: fadeIn;
+    animation-duration: 3s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .spotify-container {
+    align-items: center;
+    width: 50%; /* Adjust as needed */
+    height: 500px; /* Set the height for the container */
+    border-radius: 12px; /* Add border-radius to the container */
+    overflow: hidden; /* Optional: Hide any overflow content */
+   opacity: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow */
+  }
+  
+  /* If you want to center the iframe horizontally, you can add the following styles */
+  .spotify-container iframe {
+    display: block;
+    margin: 0 auto;
+  }

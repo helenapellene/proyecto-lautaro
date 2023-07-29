@@ -25,6 +25,7 @@ a {
   border: none;
   padding: 12px 18px;
   cursor: pointer;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
 .button::before {
@@ -79,7 +80,7 @@ a {
   font-size: 22px;
 }
 .css-nav .css-ul li a:hover {
-  color: grey !important;
+  color: #f16457 !important;
   font-weight: bold;
   text-decoration: underline #f16457;
 }
@@ -212,13 +213,104 @@ a {
   background-size: cover;
 }
 
-.about-background {
+.novedades {
+  margin-top: 3rem;
+  width: 100%;
+  height: 300px;
   background-color: black;
-  background-image: url("../assets/sobrbemi.JPG");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  opacity: 0.8;
+}
+.novedades .nov-cont {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+}
+.novedades .nov-cont .text-cont {
+  display: flex;
+  flex-direction: column;
+}
+.novedades .nov-cont .text-cont h2 {
+  color: blanchedalmond;
+}
+.novedades .nov-cont .text-cont .icons-main {
+  display: flex;
+  justify-content: center;
+  column-gap: 25px;
+  margin-top: 2rem;
+}
+.novedades .nov-cont .text-cont .icons-main .icon--spotify:hover {
+  background-color: #2ea44f;
+  outline-color: #2ea44f;
+}
+.novedades .nov-cont .text-cont .icons-main .icon--youtube:hover {
+  background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%);
+  outline-color: #a02d2d;
+}
+.novedades .nov-cont .text-cont .icons-main .icon--apple:hover {
+  background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #d6249f 60%);
+  outline-color: #a02d76;
+}
+.novedades .nov-cont .promocard {
+  width: 250px;
+}
+
+.sobre-mi {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack the elements vertically */
+  align-items: center; /* Center elements horizontally */
+  padding: 30px;
+  /* Add padding to adjust space between sections */
+}
+.sobre-mi .cont-sb {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  height: auto;
+  background-color: rgb(8, 0, 0);
+  opacity: 0.8;
+  border-radius: 20px;
+  padding-left: 1rem;
+  overflow: hidden;
+}
+.sobre-mi .cont-sb p {
+  font-size: 20px;
+  color: white;
+  text-align: left;
+  width: 60%;
+}
+.sobre-mi .cont-sb p::first-letter {
+  font-size: 70px;
+}
+
+.show-animation {
+  animation-name: fadeIn;
+  animation-duration: 3s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.spotify-container {
+  align-items: center;
+  width: 50%; /* Adjust as needed */
+  height: 500px; /* Set the height for the container */
+  border-radius: 12px; /* Add border-radius to the container */
+  overflow: hidden; /* Optional: Hide any overflow content */
+  opacity: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow */
+}
+
+/* If you want to center the iframe horizontally, you can add the following styles */
+.spotify-container iframe {
+  display: block;
+  margin: 0 auto;
 }
 
 .container {

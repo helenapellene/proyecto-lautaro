@@ -1,45 +1,107 @@
-.inicio{
+.inicio {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
     .cont {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 290px;
-        .title-container{
+
+        .title-container {
             text-align: center;
+
             h1 {
                 font-family: 'Oswald', sans-serif;
                 display: flex;
                 font-size: 90px;
                 color: white;
-                &:hover{
+
+                &:hover {
                     color: grey;
                 }
             }
+
             span {
                 font-family: 'Oswald', sans-serif;
                 color: rgb(119, 118, 118);
                 font-size: 25px;
-                  
+
             }
         }
-        
-       
-    
+
+
+
     }
-    
+
 
 }
-.main{
+
+.main {
     background-color: black;
     background-image: url("https://i.postimg.cc/kXwn0rDr/image.png");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-  }
-  
-  
+}
+
+.novedades {
+    margin-top: 3rem;
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    opacity: 0.8;
+    .nov-cont {
+
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        align-items: center;
+
+        .text-cont {
+            h2 {
+                color: blanchedalmond;
+            }
+
+            display: flex;
+            flex-direction: column;
+
+            .icons-main {
+                display: flex;
+                justify-content: center;
+                column-gap: 25px;
+                margin-top:2rem;
+
+                .icon--spotify:hover {
+                    background-color: #2ea44f;
+                    outline-color: #2ea44f;
+                }
+                .icon--youtube:hover {
+                    background-image: radial-gradient(
+                        circle at 30% 107%,
+                        #fdf497 0%,
+                        #fdf497 5%,
+                        #fd5949 45%,
+                    );
+                    outline-color: #a02d2d;
+                }
+                .icon--apple:hover {
+                    background-image: radial-gradient(
+                        circle at 30% 107%,
+                        #fdf497 0%,
+                        #d6249f 60%,
+                    );
+                    outline-color: #a02d76;
+                }
+            }
+        }
+
+        .promocard {
+            width: 250px;
+        }
+    }
+
+}
 
