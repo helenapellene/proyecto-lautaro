@@ -3,6 +3,7 @@
   flex-direction: column; /* Stack the elements vertically */
   align-items: center; /* Center elements horizontally */
   padding: 30px;
+  margin-top:3rem;
     
   .cont-sb {
     display:flex;
@@ -12,7 +13,7 @@
     height: auto;
     background-color: rgb(8, 0, 0);
     opacity: 0.8;
-    border-radius: 20px;
+    border-radius: 10px;
     padding-left: 1rem;
     overflow: hidden; 
     p {
@@ -52,8 +53,3 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow */
   }
   
-  /* If you want to center the iframe horizontally, you can add the following styles */
-  .spotify-container iframe {
-    display: block;
-    margin: 0 auto;
-  }
