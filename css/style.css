@@ -216,6 +216,40 @@ a {
   transform: scale(1.1);
 }
 
+@media screen and (min-width: 768px) {
+  .nov-cont {
+    flex-direction: row;
+  }
+  .nov-cont h2 {
+    font-size: 30px;
+  }
+  .nov-cont .icons-main {
+    flex-direction: row;
+    margin-top: 2rem;
+  }
+  .nov-cont .icons-main .icon {
+    margin-right: 25px;
+  }
+  .nov-cont .promocard {
+    width: 170px;
+    transition: transform 0.5s ease;
+  }
+  .nov-cont .promocard:hover {
+    width: 173px;
+    transform: scale(1.1);
+  }
+}
+@media screen and (max-width: 320px) {
+  .cont {
+    margin-top: 30px;
+  }
+  .title-container h1 {
+    font-size: 24px;
+  }
+  .title-container span {
+    font-size: 14px;
+  }
+}
 .sobre-mi {
   display: flex; /* Use flexbox */
   flex-direction: column; /* Stack the elements vertically */
