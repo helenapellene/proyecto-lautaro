@@ -151,7 +151,6 @@ body {
 .inicio {
   display: flex;
   flex-direction: column;
-  height: 100vh;
 }
 .inicio .cont {
   display: flex;
