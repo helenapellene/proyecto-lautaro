@@ -7,13 +7,20 @@
 }
 
 body {
-  font-family: "Oswald", sans-serif;
+  font-family: "Rubik", sans-serif;
+  background-color: black;
+  background-image: url("../assets/contact2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 /* ======================== */
 a {
   text-decoration: none;
   font-size: 20px;
+  font-family: "Changa", sans-serif;
 }
 
 .button {
@@ -63,12 +70,12 @@ a {
   margin-top: 0 !important;
 }
 .css-nav .logo {
-  width: 100px;
+  width: 90px;
 }
 .css-nav span {
-  font-family: "Oswald", sans-serif;
+  font-family: "Rubik", sans-serif;
   color: white;
-  font-size: 20px;
+  font-size: 22px;
 }
 .css-nav .css-ul {
   align-items: center;
@@ -76,8 +83,8 @@ a {
 }
 .css-nav .css-ul li a {
   color: white !important;
-  font-family: "Oswald", sans-serif;
-  font-size: 22px;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
 }
 .css-nav .css-ul li a:hover {
   color: #f16457 !important;
@@ -89,102 +96,65 @@ a {
 }
 
 .footer {
-  position: relative;
+  background: #000;
+  padding: 30px 0px;
+  font-family: "Play", sans-serif;
+  text-align: center;
+}
+.footer .row {
   width: 100%;
-  background: #282828;
-  min-height: 100px;
-  padding: 20px 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 200px;
-}
-
-.social-icon,
-.menu {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 0;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: gray;
+  font-size: 0.8em;
+  justify-content: space-around;
+  /* Alinea los elementos a lo largo del ancho del contenedor */
   flex-wrap: wrap;
-  gap: 10px;
 }
-
-.social-icon__item,
-.menu__item {
-  list-style: none;
-}
-
-.social-icon__link {
-  font-size: 2rem;
-  color: #fff;
-  margin: 0 10px;
-  display: inline-block;
-  transition: 0.5s;
-}
-
-.social-icon__link:hover {
-  transform: translateY(-10px);
-}
-
-.menu__link {
-  font-size: 1.2rem;
-  color: #fff;
-  margin: 0 10px;
-  display: inline-block;
-  transition: 0.5s;
+.footer .row a {
   text-decoration: none;
-  opacity: 0.75;
-  font-weight: 300;
+  color: gray;
+  transition: 0.5s;
 }
-
-.menu__link:hover {
-  opacity: 1;
-}
-
-.footer p {
+.footer .row a:hover {
   color: #fff;
-  margin: 15px 0 10px 0;
-  font-size: 1rem;
-  font-weight: 300;
+}
+.footer .row ul {
+  width: 100%;
+}
+.footer .row ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+.footer .row ul li a i {
+  font-size: 2em;
+  margin: 0% 1%;
 }
 
-.logo-footer {
-  width: 90px;
-}
-
-@keyframes animateWaves {
-  0% {
-    background-position-x: 1000px;
+@media (max-width: 720px) {
+  .footer {
+    text-align: left;
+    padding: 5%;
   }
-  100% {
-    background-positon-x: 0px;
+  .footer .row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
   }
-}
-@keyframes animate {
-  0% {
-    background-position-x: -1000px;
-  }
-  100% {
-    background-positon-x: 0px;
+  .footer .row a i {
+    margin: 0% 3%;
   }
 }
-.social-icon__item .md {
-  color: white;
-}
-
 .inicio {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  height: 100vh;
 }
 .inicio .cont {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 290px;
+  margin-top: 100px;
 }
 .inicio .cont .title-container {
   text-align: center;
@@ -192,7 +162,7 @@ a {
 .inicio .cont .title-container h1 {
   font-family: "Oswald", sans-serif;
   display: flex;
-  font-size: 90px;
+  font-size: 130px;
   color: white;
 }
 .inicio .cont .title-container h1:hover {
@@ -200,25 +170,13 @@ a {
 }
 .inicio .cont .title-container span {
   font-family: "Oswald", sans-serif;
-  color: rgb(119, 118, 118);
+  color: white;
   font-size: 25px;
 }
 
-.main {
-  background-color: black;
-  background-image: url("https://i.postimg.cc/kXwn0rDr/image.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-
 .novedades {
-  margin-top: 3rem;
-  width: 100%;
-  height: auto;
-  background-color: black;
   opacity: 0.8;
+  background-color: #131313;
 }
 .novedades .nov-cont {
   display: flex;
@@ -226,37 +184,35 @@ a {
   gap: 2rem;
   align-items: center;
 }
-.novedades .nov-cont .text-cont {
-  display: flex;
-  flex-direction: column;
+.novedades .nov-cont h2 {
+  font-size: 30px;
+  font-family: "Rubik", sans-serif;
+  color: rgb(255, 253, 253);
 }
-.novedades .nov-cont .text-cont h2 {
-  color: blanchedalmond;
-}
-.novedades .nov-cont .text-cont .icons-main {
+.novedades .nov-cont .icons-main {
   display: flex;
   justify-content: center;
   column-gap: 25px;
   margin-top: 2rem;
 }
-.novedades .nov-cont .text-cont .icons-main .icon--spotify:hover {
+.novedades .nov-cont .icons-main .icon--spotify:hover {
   background-color: #2ea44f;
   outline-color: #2ea44f;
 }
-.novedades .nov-cont .text-cont .icons-main .icon--youtube:hover {
+.novedades .nov-cont .icons-main .icon--youtube:hover {
   background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%);
   outline-color: #a02d2d;
 }
-.novedades .nov-cont .text-cont .icons-main .icon--apple:hover {
+.novedades .nov-cont .icons-main .icon--apple:hover {
   background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #d6249f 60%);
   outline-color: #a02d76;
 }
-.novedades .nov-cont .promocard {
+.novedades .promocard {
   width: 170px;
   transition: transform 0.5s ease;
 }
-.novedades .nov-cont .promocard:hover {
-  width: 190px;
+.novedades .promocard:hover {
+  width: 173px;
   transform: scale(1.1);
 }
 
@@ -266,7 +222,12 @@ a {
   align-items: center; /* Center elements horizontally */
   padding: 30px;
   margin-top: 3rem;
+  width: 100%;
   /* Add padding to adjust space between sections */
+}
+.sobre-mi .abimg {
+  width: 400px;
+  height: auto;
 }
 .sobre-mi .cont-sb {
   display: flex;
@@ -313,19 +274,117 @@ a {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow */
 }
 
+/*CSS Gallery*/
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #1d1c1c;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.gallery-item {
+  flex-basis: 32.7%;
+  margin-bottom: 6px;
+  opacity: 0.85;
+  cursor: pointer;
+}
+
+.gallery-item:hover {
+  opacity: 1;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-content {
+  font-size: 0.8em;
+}
+
+.lightbox {
+  position: fixed;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  top: 0;
+  left: 0;
+}
+
+.lightbox-content {
+  position: relative;
+  width: 70%;
+  height: 70%;
+  margin: 5% auto;
+}
+
+.lightbox-content img {
+  border-radius: 7px;
+  box-shadow: 0 0 3px 0 rgba(225, 225, 225, 0.25);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #1d1c1c;
+  padding: 7px;
+  top: 45%;
+  cursor: pointer;
+}
+
+.lightbox-prev {
+  left: 0;
+}
+
+.lightbox-next {
+  right: 0;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 767px) {
+  .gallery-container {
+    width: 100%;
+  }
+  .gallery-item {
+    flex-basis: 49.8%;
+    margin-bottom: 3px;
+  }
+  .lightbox-content {
+    width: 80%;
+    height: 60%;
+    margin: 15% auto;
+  }
+}
+@media (max-width: 480px) {
+  .gallery-item {
+    flex-basis: 100%;
+    margin-bottom: 1px;
+  }
+  .lightbox-content {
+    width: 90%;
+    margin: 20% auto;
+  }
+}
+/*END CSS Gallery*/
 .container {
   max-width: 960px;
   margin-inline: auto;
   padding: 60px 15px;
-}
-
-.pro {
-  background-color: black;
-  background-image: url("../assets/aboutme.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
 }
 
 .proyectos {
@@ -334,125 +393,145 @@ a {
   gap: 2rem;
 }
 
-.container {
-  position: relative;
+:root {
+  --background: #D8E3FA;
+  --gray: #EAEAEC;
+  --primary: #29283F;
+  --primary-violet: #7370F4;
+}
+
+body {
+  background-color: var(--background);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  padding: 24px;
+  font-size: 16px;
+  font-family: Poppins, sans-serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.card {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
-  gap: 100px 50px;
-  padding: 100px 50px;
-}
-
-.container .card {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  width: 350px;
-  max-width: 100%;
-  height: 300px;
-  background: white;
-  border-radius: 20px;
-  transition: 0.5s;
-  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
-}
-
-.container .card:hover {
-  height: 400px;
+  border-radius: 24px;
+  background-color: white;
   cursor: pointer;
-}
-
-.container .card .img-box {
-  position: absolute;
-  top: 20px;
-  width: 300px;
-  height: 220px;
-  background: #333;
-  border-radius: 12px;
   overflow: hidden;
-  transition: 0.5s;
+  max-width: clamp(320px, 70vw, 740px);
+  min-width: 320px;
+  min-height: 280px;
 }
 
-.container .card:hover .img-box {
-  top: -100px;
-  scale: 0.75;
-  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.container .card .img-box img {
-  position: absolute;
-  top: 0;
-  left: 0;
+.background {
+  flex: 1 1 250px;
+}
+
+.background img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.container .card .content {
-  position: absolute;
-  top: 252px;
-  width: 100%;
-  height: 35px;
-  padding: 0 30px;
-  text-align: center;
-  overflow: hidden;
-  transition: 0.5s;
+.content {
+  flex: 3 1 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 16px;
 }
 
-.container .card:hover .content {
-  top: 130px;
-  height: 250px;
-}
-
-.container .card .content h2 {
-  font-size: 1.5rem;
+.content > h2 {
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
   font-weight: 700;
-  color: var(--clr);
+  margin-bottom: clamp(0.35rem, 2vw, 0.55rem);
 }
 
-.container .card .content p {
-  color: #333;
+.content > p {
+  font-size: clamp(1rem, 1.75vw, 1.1rem);
+  font-weight: 400;
+  margin: 6px 0;
 }
 
-.container .card .content a {
-  position: relative;
-  top: 15px;
-  display: inline-block;
-  padding: 12px 25px;
-  text-decoration: none;
-  background: var(--clr);
-  color: white;
+.content a {
+  color: var(--primary-violet);
+}
+
+.chips {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 12px 0px 16px 0px;
+}
+
+.chip {
+  border-radius: 12px;
+  padding: 10px;
+  font-size: 15px;
+  background-color: var(--gray);
+  transition: all 0.3s;
   font-weight: 500;
 }
 
-.container .card .content a:hover {
-  opacity: 0.8;
+.chip:hover {
+  background-color: var(--primary-violet);
+  color: var(--gray);
 }
 
-@media (max-width: 480px) {
-  .container .card {
-    width: 230px;
-    border-radius: 15px;
-  }
-  .container .card .img-box {
-    width: 185px;
-    border-radius: 10px;
-  }
-  .container .card .content p {
-    font-size: 0.8rem;
-  }
-  .container .card .content a {
-    font-size: 0.9rem;
-  }
+.action-buttons {
+  border-top: 1px solid var(--gray);
+  padding-top: 16px;
+  gap: 12px;
+  display: flex;
+  margin-top: auto;
+  flex-wrap: wrap;
 }
-.contact-b {
-  background-color: black;
-  background-image: url("../assets/SUDACA PENA 25 MAYO-37.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+
+.action-buttons a {
+  background-color: var(--primary);
+  color: white;
+  padding: 12px;
+  text-decoration: none;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  flex: 1 0 240px;
+  max-width: 100%;
+}
+
+.action-buttons a:hover {
+  text-decoration: underline;
+}
+
+.action-buttons a.secondary {
+  background-color: inherit;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  flex: 1 0 80px;
+}
+
+.cont-t {
+  display: flex;
+  justify-content: start;
+  gap: 2rem;
+  font-weight: 100;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 100px;
 }
 
 .icons {

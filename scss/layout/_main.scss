@@ -1,13 +1,13 @@
 .inicio {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    height:100vh;
 
     .cont {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 290px;
+        margin-top: 100px;
 
         .title-container {
             text-align: center;
@@ -15,7 +15,7 @@
             h1 {
                 font-family: 'Oswald', sans-serif;
                 display: flex;
-                font-size: 90px;
+                font-size: 130px;
                 color: white;
 
                 &:hover {
@@ -25,7 +25,7 @@
 
             span {
                 font-family: 'Oswald', sans-serif;
-                color: rgb(119, 118, 118);
+                color:white;
                 font-size: 25px;
 
             }
@@ -38,35 +38,21 @@
 
 }
 
-.main {
-    background-color: black;
-    background-image: url("https://i.postimg.cc/kXwn0rDr/image.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
 .novedades {
-    margin-top: 3rem;
-    width: 100%;
-    height: auto;
-    background-color: black;
     opacity: 0.8;
+    background-color: #131313;
     .nov-cont {
 
         display: flex;
         justify-content: center;
         gap: 2rem;
         align-items: center;
+        h2 {
+            font-size: 30px;
+            font-family: 'Rubik', sans-serif;
+            color: rgb(255, 253, 253);
+        }
 
-        .text-cont {
-            h2 {
-                color: blanchedalmond;
-            }
-
-            display: flex;
-            flex-direction: column;
 
             .icons-main {
                 display: flex;
@@ -101,11 +87,11 @@
             width: 170px;
             transition: transform 0.5s ease;
             &:hover{
-                width: 190px;
+                width: 173px;
   transform: scale(1.1);
             }
         }
     }
 
-}
+
 

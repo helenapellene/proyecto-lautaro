@@ -1,11 +1,14 @@
-.contact-b{
-    background-color: black;
-    background-image: url("../assets/SUDACA\ PENA\ 25\ MAYO-37.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
 
+
+.cont-t{
+	display:flex;
+	justify-content: start;
+	gap: 2rem;
+	font-weight: 100;
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	font-size: 100px;
+	
 }
 
 .icons {
