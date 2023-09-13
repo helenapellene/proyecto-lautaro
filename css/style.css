@@ -242,7 +242,7 @@ body {
     transform: scale(1.1);
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 430px) {
   body {
     background-color: black;
     background-image: url("../assets/op2.png");
