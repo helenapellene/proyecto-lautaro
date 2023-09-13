@@ -145,12 +145,13 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100% auto;
+  background-size: cover;
 }
 
 .inicio {
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 .inicio .cont {
   display: flex;
@@ -242,6 +243,14 @@ body {
   }
 }
 @media screen and (max-width: 320px) {
+  body {
+    background-color: black;
+    background-image: url("../assets/op2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
   .cont {
     margin-top: 30px;
   }
