@@ -9,47 +9,28 @@ body{
 }
 
 
-
-.inicio {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    .cont {
+    h1 {
+        font-family: 'Oswald', sans-serif;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 100px;
-
-        .title-container {
-            text-align: center;
-
-            h1 {
-                font-family: 'Oswald', sans-serif;
-                display: flex;
-                font-size: 130px;
-                color: white;
-                
-                &:hover {
-                    color: grey;
-                }
-            }
-
-            span {
-                font-family: 'Oswald', sans-serif;
-                color:white;
-                font-size: 25px;
-
-            }
+        font-size: 130px;
+        color: white;
+        
+        &:hover {
+            color: grey;
         }
+    }
 
-
-
+    span {
+        font-family: 'Oswald', sans-serif;
+        color:white;
+        font-size: 25px;
+      
     }
 
     
 
 
-}
+
 
 .novedades {
     opacity: 0.8;
@@ -108,56 +89,3 @@ body{
 
 
 
-    @media screen and (min-width: 768px) {
-        // Estilos específicos para pantallas con un ancho mínimo de 768px (tabletas y escritorio)
-        .nov-cont {
-            flex-direction: row; // Vuelvo a la dirección de fila para tabletas y escritorio
-
-            h2 {
-                font-size: 30px; // Ajusto el tamaño de fuente para tabletas y escritorio
-            }
-
-            .icons-main {
-                flex-direction: row; // Vuelvo a la dirección de fila para tabletas y escritorio
-                margin-top: 2rem; // Restauro el margen superior para tabletas y escritorio
-
-                .icon {
-                    margin-right: 25px; // Espaciado entre iconos para tabletas y escritorio
-                }
-            }
-
-            .promocard {
-                width: 170px; // Restauro el tamaño de las promociones para tabletas y escritorio
-                transition: transform 0.5s ease;
-
-                &:hover {
-                    width: 173px;
-                    transform: scale(1.1); // Ajusto la escala en hover para tabletas y escritorio
-                }
-            }
-        }
-    }
-    @media screen and (max-width: 430px) {
-        body{
-            background-color: black;
-            background-image: url("../assets/op2.png");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-            
-        }
-        .cont {
-            margin-top: 30px; // Ajusta el margen superior para dispositivos móviles de 320px
-        }
-
-        .title-container {
-            h1 {
-                font-size: 24px; // Ajusta el tamaño de fuente para dispositivos móviles de 320px
-            }
-
-            span {
-                font-size: 14px; // Ajusta el tamaño de fuente para dispositivos móviles de 320px
-            }
-        }
-    }
