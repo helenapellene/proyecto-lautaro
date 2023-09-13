@@ -8,12 +8,6 @@
 
 body {
   font-family: "Rubik", sans-serif;
-  background-color: black;
-  background-image: url("../assets/contact2.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
 }
 
 /* ======================== */
@@ -145,10 +139,18 @@ a {
     margin: 0% 3%;
   }
 }
+body {
+  background-color: black;
+  background-image: url("../assets/contact2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% auto;
+}
+
 .inicio {
   display: flex;
   flex-direction: column;
-  height: 100vh;
 }
 .inicio .cont {
   display: flex;
