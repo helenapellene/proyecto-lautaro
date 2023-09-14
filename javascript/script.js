@@ -70,3 +70,46 @@ function closeLightBox() {
     }
 }
 lightBoxContainer.addEventListener("click", closeLightBox);
+
+
+// Hero Section
+ScrollReveal().reveal(".hero-title", {
+    ...defaultProps,
+    delay: 500,
+    origin: window.innerWidth > 768 ? "left" : "bottom",
+  });
+  ScrollReveal().reveal(".name", {
+    ...defaultProps,
+    distance: "0px",
+    delay: 700,
+    scale: 0,
+  });
+  ScrollReveal().reveal(".hero-cta", {
+    ...defaultProps,
+    delay: 1200,
+    origin: window.innerWidth > 768 ? "left" : "bottom",
+  });
+  ScrollReveal().reveal(".scroll-down-link", {
+    ...defaultProps,
+    delay: 2000,
+    origin: "top",
+  });
+  
+  /* About Section */
+  ScrollReveal().reveal(".section-title", {
+    ...defaultProps,
+    delay: 400,
+    distance: "0px",
+  });
+  ScrollReveal().reveal(".about-wrapper__image", {
+    ...defaultProps,
+    delay: 600,
+    scale: 0.5,
+  });
+  
+  ScrollReveal().reveal(".about-wrapper__info", {
+    ...defaultProps,
+    delay: 700,
+    distance: "100px",
+    origin: window.innerWidth > 768 ? "left" : "top",
+  });

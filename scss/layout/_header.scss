@@ -6,22 +6,16 @@
     .logo{
         width: 90px;
     }
-    span{
-        font-family: 'Rubik', sans-serif;
-        color:white;
-        font-size: 22px;
-    }
     .css-ul{
-        align-items: center;
         gap: 2rem;
         li a{
             color:white !important;
             font-family: 'Rubik', sans-serif;
             font-size: 20px;
             &:hover{
-                color:#f16457 !important;
+                color:rgb(134, 5, 5) !important;
                 font-weight: bold;
-                text-decoration: underline #f16457;
+                text-decoration: underline rgb(134, 5, 5);
             }
         }
     }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* General styles */
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 * {
@@ -16,7 +17,7 @@ body {
   outline: 2px solid;
   color: white;
   outline-color: rgb(134, 5, 5);
-  outline-offset: 6px;
+  outline-offset: 4px;
   text-shadow: none;
   cursor: pointer;
   font-size: 20px;
@@ -33,9 +34,14 @@ body {
 
 .button:hover {
   border: 2px solid var(--accent);
-  outline-color: rgba(255, 255, 255, 0);
+  outline-color: rgba(140, 7, 7, 0);
   outline-offset: 15px;
-  color: var(--accent);
+  color: rgb(180, 153, 153);
+}
+
+.btn-sb {
+  margin: 2rem;
+  text-align: center;
 }
 
 .css-nav {
@@ -47,13 +53,7 @@ body {
 .css-nav .logo {
   width: 90px;
 }
-.css-nav span {
-  font-family: "Rubik", sans-serif;
-  color: white;
-  font-size: 22px;
-}
 .css-nav .css-ul {
-  align-items: center;
   gap: 2rem;
 }
 .css-nav .css-ul li a {
@@ -62,9 +62,9 @@ body {
   font-size: 20px;
 }
 .css-nav .css-ul li a:hover {
-  color: #f16457 !important;
+  color: rgb(134, 5, 5) !important;
   font-weight: bold;
-  text-decoration: underline #f16457;
+  text-decoration: underline rgb(134, 5, 5);
 }
 
 .navbar-toggler {
@@ -130,6 +130,68 @@ body {
   background-size: cover;
 }
 
+#hero {
+  height: 100vh;
+}
+
+.scroll-down-link {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+}
+
+.scroll-down {
+  height: 50px;
+  width: 30px;
+  border: 2px solid #d4d1d1;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.scroll-down::before, .scroll-down::after {
+  height: 10px;
+  width: 10px;
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  border: 2px solid #a02d2d;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border-top: none;
+  border-left: none;
+  animation: scroll-down 1s ease-in-out infinite;
+}
+.scroll-down::after {
+  top: 30%;
+  animation-delay: 0.3s;
+}
+
+@keyframes hidden {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes scroll-down {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 90%;
+  }
+}
 h1 {
   font-family: "Oswald", sans-serif;
   display: flex;
@@ -140,87 +202,52 @@ h1:hover {
   color: grey;
 }
 
-span {
+.span-main {
+  font-family: "Oswald", sans-serif;
+  color: white;
+  font-size: 25px;
+  margin: 2rem;
+}
+
+.promocard {
+  width: 170px;
+}
+
+.section-title {
+  color: white;
+  font-size: 70px;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 0.7rem;
+}
+
+.sect-span {
   font-family: "Oswald", sans-serif;
   color: white;
   font-size: 25px;
 }
 
-.novedades {
-  opacity: 0.8;
-  background-color: #131313;
-}
-.novedades .nov-cont {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  align-items: center;
-}
-.novedades .nov-cont h2 {
-  font-size: 30px;
-  font-family: "Rubik", sans-serif;
-  color: rgb(255, 253, 253);
-}
-.novedades .nov-cont .icons-main {
+.icons-main {
   display: flex;
   justify-content: center;
   column-gap: 25px;
   margin-top: 2rem;
 }
-.novedades .nov-cont .icons-main .icon--spotify:hover {
+.icons-main .icon--spotify:hover {
   background-color: #2ea44f;
   outline-color: #2ea44f;
 }
-.novedades .nov-cont .icons-main .icon--youtube:hover {
+.icons-main .icon--youtube:hover {
   background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%);
   outline-color: #a02d2d;
 }
-.novedades .nov-cont .icons-main .icon--apple:hover {
+.icons-main .icon--apple:hover {
   background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #d6249f 60%);
   outline-color: #a02d76;
 }
-.novedades .promocard {
-  width: 170px;
-  transition: transform 0.5s ease;
-}
-.novedades .promocard:hover {
-  width: 173px;
-  transform: scale(1.1);
-}
 
-.sobre-mi {
-  display: flex; /* Use flexbox */
-  flex-direction: column; /* Stack the elements vertically */
-  align-items: center; /* Center elements horizontally */
-  padding: 30px;
-  margin-top: 3rem;
-  width: 100%;
-  /* Add padding to adjust space between sections */
-}
-.sobre-mi .abimg {
-  width: 400px;
-  height: auto;
-}
-.sobre-mi .cont-sb {
+.icons-main {
   display: flex;
-  align-items: center;
-  gap: 1rem;
-  width: 100%;
-  height: auto;
-  background-color: rgb(8, 0, 0);
-  opacity: 0.8;
-  border-radius: 10px;
-  padding-left: 1rem;
-  overflow: hidden;
-}
-.sobre-mi .cont-sb p {
-  font-size: 20px;
-  color: white;
-  text-align: left;
-  width: 60%;
-}
-.sobre-mi .cont-sb p::first-letter {
-  font-size: 70px;
+  gap: 3rem;
 }
 
 .show-animation {
@@ -353,6 +380,31 @@ span {
   }
 }
 /*END CSS Gallery*/
+/* Estilos para el contenedor cuadrado */
+.contenedor-cuadrado {
+  /* Ancho del 90% del contenedor principal */
+  width: 600px; /* Ancho máximo para controlar el ancho del cuadro */
+  height: 600px; /* Altura fija de 500px */
+  background-color: rgb(229, 225, 225); /* Fondo blanco */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  display: flex; /* Utiliza el modelo de caja flexible para centrar verticalmente */
+  align-items: center; /* Centra verticalmente el contenido */
+  justify-content: center; /* Centra horizontalmente el contenido */
+  padding: 20px; /* Espacio interior */
+}
+
+/* Estilos para el texto dentro del contenedor */
+.texto {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  color: #333; /* Color del texto */
+}
+
+.sb-im {
+  width: 100%;
+}
+
 .container {
   max-width: 960px;
   margin-inline: auto;
