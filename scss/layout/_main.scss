@@ -1,55 +1,276 @@
+// body{
+//     background-color: black;
+//     background-position: center;
+//     background-image: url("../assets/contact2.png");
+//     background-repeat: no-repeat;
+//     background-attachment: fixed;
+//     background-size: cover;
+    
+// }
+
+// #hero{
+//   height: 100vh; 
+
+  
+// }
+
+
+
+  
+//     h1 {
+//         font-family: 'Oswald', sans-serif;
+//         display: flex;
+//         font-size: 130px;
+//         color: white;
+        
+//         &:hover {
+//             color: grey;
+//         }
+//     }
+
+//     .span-main {
+//         font-family: 'Oswald', sans-serif;
+//         color:white;
+//         font-size: 25px;
+//         margin: 2rem;
+      
+//     }
+
+    
+
+
+
+// .promocard{
+//     width:170px;
+// }
+
+
+// .section-title{
+//     color:white;
+//     font-size: 70px;
+//     font-family: 'Oswald', sans-serif;
+//     letter-spacing: 0.7rem;
+    
+//   }
+  
+//   .sect-span{
+//     font-family: 'Oswald', sans-serif;
+//           color:white;
+//           font-size: 25px;
+//   }
+  
+//   .icons-main {
+//     display: flex;
+//     justify-content: center;
+//     column-gap: 25px;
+//     margin-top:2rem;
+  
+//     .icon--spotify:hover {
+//         background-color: #2ea44f;
+//         outline-color: #2ea44f;
+//     }
+//     .icon--youtube:hover {
+//         background-image: radial-gradient(
+//             circle at 30% 107%,
+//             #fdf497 0%,
+//             #fdf497 5%,
+//             #fd5949 45%,
+//         );
+//         outline-color: #a02d2d;
+//     }
+//     .icon--apple:hover {
+//         background-image: radial-gradient(
+//             circle at 30% 107%,
+//             #fdf497 0%,
+//             #d6249f 60%,
+//         );
+//         outline-color: #a02d76;
+//     }
+//   }
+  
+//   .icons-main{
+//     display:flex;
+//     gap:3rem;
+//   }
+  
+  
+  
+//     .show-animation {
+//       animation-name: fadeIn;
+//       animation-duration: 3s;
+//     }
+    
+//     @keyframes fadeIn {
+//       from {
+//         opacity: 0;
+//       }
+//       to {
+//         opacity: 1;
+//       }
+//     }
+    
+//     .spotify-container {
+//       align-items: center;
+//       width: 50%; /* Adjust as needed */
+//       height: 500px; /* Set the height for the container */
+//       border-radius: 12px; /* Add border-radius to the container */
+//       overflow: hidden; /* Optional: Hide any overflow content */
+//      opacity: 1;
+//       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow */
+//     }
+    
+    
+  
+  
+//     /*CSS Gallery*/
+//     .gallery-container {
+//       display: flex;
+//       flex-wrap: wrap;
+//       justify-content: space-between;
+//       background-color: #1d1c1c;
+//       box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+//       width: 80%;
+//       margin: 0 auto;
+//       padding: 10px;
+//   }
+//   .gallery-item {
+//       flex-basis: 32.7%;
+//       margin-bottom: 6px;
+//       opacity: .85;
+//       cursor: pointer;
+//   }
+//   .gallery-item:hover {
+//       opacity: 1;
+//   }
+//   .gallery-item img {
+//       width: 100%;
+//       height: 100%;
+//       object-fit: cover;
+//   }
+//   .gallery-content {
+//       font-size: .8em;
+//   }
+  
+//   .lightbox {
+//       position: fixed;
+//       display: none;
+//       background-color: rgba(0, 0, 0, 0.8);
+//       width: 100%;
+//       height: 100%;              
+//       overflow: auto;
+//       top: 0;
+//       left: 0;
+//   }
+//   .lightbox-content {
+//       position: relative;
+//       width: 70%;
+//       height: 70%;
+//       margin: 5% auto;
+//   }
+//   .lightbox-content img {
+//       border-radius: 7px;
+//       box-shadow: 0 0 3px 0 rgba(225, 225, 225, .25);
+//       width: 100%;
+//       height: 100%;
+//       object-fit: cover;
+//   }
+//   .lightbox-prev,
+//   .lightbox-next {
+//       position: absolute;
+//       background-color: rgba(0, 0, 0, 0.8);
+//       color: #1d1c1c;
+//       padding: 7px;
+//       top: 45%;
+//       cursor: pointer;
+//   }
+//   .lightbox-prev {
+//       left: 0;
+//   }
+//   .lightbox-next {
+//       right: 0;
+//   }
+//   .lightbox-prev:hover,
+//   .lightbox-next:hover {
+//       opacity: .8;
+//   }
+  
+//   @media (max-width: 767px) {
+//       .gallery-container {
+//           width: 100%;
+//       }
+//       .gallery-item {
+//           flex-basis: 49.80%;
+//           margin-bottom: 3px;
+//       }
+//       .lightbox-content {
+//           width: 80%;
+//           height: 60%;
+//           margin: 15% auto;
+//       }
+//   }
+//   @media (max-width: 480px) {
+//       .gallery-item {
+//           flex-basis: 100%;
+//           margin-bottom: 1px;
+//       }
+//       .lightbox-content {
+//           width: 90%;
+//           margin: 20% auto;
+//       }
+//   }
+//   /*END CSS Gallery*/
+  
+  
+
 body{
-    background-color: black;
-    background-image: url("../assets/contact2.png");
     background-position: center;
+    background-image: url("../assets/contact2.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     
-}
-
-#hero{
-  height: 100vh; 
-
+  }
   
-}
-
-
-
-  
-    h1 {
-        font-family: 'Oswald', sans-serif;
-        display: flex;
-        font-size: 130px;
-        color: white;
-        
-        &:hover {
-            color: grey;
-        }
+  #hero{
+      height: 100vh; 
     }
-
-    .span-main {
-        font-family: 'Oswald', sans-serif;
-        color:white;
-        font-size: 25px;
-        margin: 2rem;
+  
+  
+    .hero-title {
+      font-family: 'Oswald', sans-serif;
+      margin-top: 5rem;
+      font-size: 130px;
+      color: white;
       
-    }
-
-    
-
-
-
-.promocard{
+      &:hover {
+          color: grey;
+      }
+  } 
+  
+  
+  .span-main {
+    font-family: 'Oswald', sans-serif;
+    color:white;
+    font-size: 25px;
+    margin: 2rem;
+  
+  }
+  
+  ///////////NOVEDADES
+  .promocard{
     width:170px;
-}
-
-
-.section-title{
+  }
+  
+  #about{
+    margin-bottom:4rem;
+  }
+  .section-title{
     color:white;
     font-size: 70px;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 0.7rem;
+    margin:4rem;
+    
     
   }
   
@@ -120,104 +341,3 @@ body{
     }
     
     
-  
-  
-    /*CSS Gallery*/
-    .gallery-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      background-color: #1d1c1c;
-      box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
-      width: 80%;
-      margin: 0 auto;
-      padding: 10px;
-  }
-  .gallery-item {
-      flex-basis: 32.7%;
-      margin-bottom: 6px;
-      opacity: .85;
-      cursor: pointer;
-  }
-  .gallery-item:hover {
-      opacity: 1;
-  }
-  .gallery-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-  }
-  .gallery-content {
-      font-size: .8em;
-  }
-  
-  .lightbox {
-      position: fixed;
-      display: none;
-      background-color: rgba(0, 0, 0, 0.8);
-      width: 100%;
-      height: 100%;              
-      overflow: auto;
-      top: 0;
-      left: 0;
-  }
-  .lightbox-content {
-      position: relative;
-      width: 70%;
-      height: 70%;
-      margin: 5% auto;
-  }
-  .lightbox-content img {
-      border-radius: 7px;
-      box-shadow: 0 0 3px 0 rgba(225, 225, 225, .25);
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-  }
-  .lightbox-prev,
-  .lightbox-next {
-      position: absolute;
-      background-color: rgba(0, 0, 0, 0.8);
-      color: #1d1c1c;
-      padding: 7px;
-      top: 45%;
-      cursor: pointer;
-  }
-  .lightbox-prev {
-      left: 0;
-  }
-  .lightbox-next {
-      right: 0;
-  }
-  .lightbox-prev:hover,
-  .lightbox-next:hover {
-      opacity: .8;
-  }
-  
-  @media (max-width: 767px) {
-      .gallery-container {
-          width: 100%;
-      }
-      .gallery-item {
-          flex-basis: 49.80%;
-          margin-bottom: 3px;
-      }
-      .lightbox-content {
-          width: 80%;
-          height: 60%;
-          margin: 15% auto;
-      }
-  }
-  @media (max-width: 480px) {
-      .gallery-item {
-          flex-basis: 100%;
-          margin-bottom: 1px;
-      }
-      .lightbox-content {
-          width: 90%;
-          margin: 20% auto;
-      }
-  }
-  /*END CSS Gallery*/
-  
-  

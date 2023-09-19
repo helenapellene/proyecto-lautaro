@@ -33,7 +33,9 @@
   margin:2rem;
   text-align: center;
 }
-
+.cont-btn{
+  margin-top:2rem;
+}
 
 .scroll-down-link {
   position: absolute;
@@ -41,7 +43,7 @@
   justify-content: center;
   align-items: center;
   left: 50%;
-  bottom: 20px;
+  bottom: 50px;
   transform: translateX(-50%);
 }
 .scroll-down {
